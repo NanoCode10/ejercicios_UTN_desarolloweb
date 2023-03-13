@@ -15,9 +15,9 @@ obtenerTipoDato();
 var numero1;
 var numero2;
 function IngresarDatos(){
-    numero1 = parseInt( prompt("Ingrese un numero") );
+    numero1 = parseInt( prompt("Ingrese un mes") );
     
-     numero2 = parseInt (prompt("Ingrese otro numero"));
+     numero2 = parseInt (prompt("Ingrese otro mes"));
 
 }
 function devulveResta(){
@@ -91,47 +91,151 @@ alert('Los Grados convertidos a celcius es ' + celcius);
 
 // Ejercicio 6
 /*
-var numero;
+var mes;
 
 function IngresarDatos(){
    do
-    numero = parseInt (prompt("Ingrese un numero entre 0 y 10 para realizar su factorial") );   
-   while ( (numero > 10) || (numero < 0));
+    mes = parseInt (prompt("Ingrese un mes entre 0 y 10 para realizar su factorial") );   
+   while ( (mes > 10) || (mes < 0));
 }
 IngresarDatos();
-var resultado =  numero ;
+var resultado =  mes ;
 function factorizante (){
-    if ((numero === 0) || (numero === 1)){
+    if ((mes === 0) || (mes === 1)){
         resultado = 1;
         return resultado ;
     }
-    while (numero > 1){
-        numero --;
-        resultado *= numero;
+    while (mes > 1){
+        mes --;
+        resultado *= mes;
     }
 }
 
 factorizante();
-alert('El resultado de factorizar el numero es ' +  resultado);
+alert('El resultado de factorizar el mes es ' +  resultado);
 
 */
 
 //Ejercicio 7
+/*
 var palindromo;
+var cadena_ori;
+var reverPalidromo;
 function IngresarDatos(){
     palindromo = prompt ('Ingrese una cadena de texto para saber si es palindromo');
     var re = /[\W_]/g;
-    var primetro = palindromo.toLowerCase().replace(re, '');
-    console.log(primetro);
+    cadena_ori = palindromo.toLowerCase().replace(re, '').toString();
+    
 }
 
-function verificaPalindromo(){
+function CreaReversePalindromo(){
     var re = /[\W_]/g;
-    var reverPalidromo = palindromo.split('').reverse().join('').replace(re,'');
-    console.log(reverPalidromo);
-
-
+    reverPalidromo = palindromo.split('').reverse().join('').replace(re,'');
+    
 }
 
 IngresarDatos();
-verificaPalindromo();
+CreaReversePalindromo();
+
+if(cadena_ori == reverPalidromo){
+   alert('Este es un palidromo')
+            
+}else {
+    alert('Este no es un palidromo')
+}
+*/
+//Ejercicio 8
+/*
+function IngresarDatos(){
+    let cadena = prompt ('Ingrese una cadena de texto para convertirla en Mayusculas y minisculas');
+    return cadena;    
+    
+    
+}
+
+function ConvierteMayu (cadena) {
+    
+
+    let mayuCadena = cadena.toUpperCase();
+    
+    return mayuCadena;
+}
+function ConvierteMin (cadena) {
+    
+
+    let minuCadena = cadena.toLowerCase();
+    
+    return minuCadena;
+}
+
+cadena = IngresarDatos();
+
+alert("En mayuscula la cadena es "+ ConvierteMayu(cadena) );
+alert("En minuscula la cadena es "+ ConvierteMin(cadena) );
+*/
+
+//Ejercicio 9
+/*
+function IngresarDatos(){
+    do
+    var mes = parseInt (prompt("Ingrese una nota numerica de un alumno. Para mostrar calificacion: ") );   
+    while ( (mes > 10) || (mes < 0));
+    return mes;
+ }
+ function CalificaNota(mes){
+    if (mes <= 3){
+        alert('Muy Deficiente');
+    }else if(mes > 3 && mes <= 5 ){
+        alert('Insuficiente');
+    }else if(mes > 5 && mes <= 6 ){
+        alert('Suficiente');
+    }else if(mes > 6 && mes <= 7 ){
+        alert('Bien');        
+    }else if(mes > 7 && mes <= 9 ){
+        alert('Notable');        
+    }else if(mes > 9 && mes <= 10 ){
+        alert('Sobresaliente');
+    }    
+ }
+ 
+ CalificaNota(IngresarDatos());
+ */
+
+ //Ejercicio 10
+ /*
+ function IngresarDatos(){
+    do
+    var mes = parseInt (prompt("Ingrese un mes en mes para saber cuantos dias tiene el mes ") );   
+    while ( (mes > 12) || (mes <= 0));
+    return mes;
+ }
+ 
+ var getDaysInMonth = function(month,year) {
+   
+   return new Date(year, month, 0).getDate();
+ 
+  };
+  alert('El mes que ingreso tiene ' +(getDaysInMonth(IngresarDatos(), 2023)) + ' dias' );
+  */
+ //ejercicio 11
+ function IngresarDatos(){
+    do
+    var numero =  (prompt("Ingrese un numero del 1 al 10 para crear una piramide") );   
+    while ( (numero > 10) || (numero <= 0));
+    return numero;
+ }
+ var num = IngresarDatos();
+ 
+ console.log( num  );
+ 
+for(var i=0; i<=num; i++)
+
+{
+ var piramide = '';
+ for(var x=1; x<=i; x++)
+    {
+        piramide = piramide + x;
+        
+    }
+  console.log(piramide);
+}
