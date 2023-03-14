@@ -218,6 +218,7 @@ function IngresarDatos(){
   alert('El mes que ingreso tiene ' +(getDaysInMonth(IngresarDatos(), 2023)) + ' dias' );
   */
  //ejercicio 11
+ /*
  function IngresarDatos(){
     do
     var numero =  (prompt("Ingrese un numero del 1 al 10 para crear una piramide") );   
@@ -239,3 +240,47 @@ for(var i=0; i<=num; i++)
     }
   console.log(piramide);
 }
+*/
+//Ejercicio 12
+/*
+var cantBultosCajas;
+var cantBultos;
+function IngresarDatos(){
+    
+     cantBultos = parseInt (prompt("Ingrese la cantida de bultos en stock") );   
+     cantBultosCajas = parseInt (prompt("Ingrese la cantida de bultos que pueden entrar por caja") );
+
+ }
+
+function CalculoCajas() {
+    var totalCajas = Math.trunc( cantBultos / cantBultosCajas );
+    console.log('El total de cajas a utilizar son ' + totalCajas);
+    var sobranteCajas = cantBultos  - (totalCajas * cantBultosCajas);
+    console.log('El total de bultos que sobran son  ' + sobranteCajas);
+}
+IngresarDatos();
+CalculoCajas();
+*/
+//Ejercicio 13
+function IngresarDatos(){
+    
+    codigo =  (prompt("Ingrese el codigo del articulo") );   
+    return codigo
+
+}
+function descuento( codigo) {
+    switch (codigo) {
+        case 'fiesta':
+          console.log('El descuento es un 5%');
+          break;
+        case 'focus':
+        
+          console.log('El desciento es un 10%');
+          
+          break;
+        default:
+            console.log('No ingreso un codigo correcto.');
+        }
+    
+}
+descuento(IngresarDatos());
