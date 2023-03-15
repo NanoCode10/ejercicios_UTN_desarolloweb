@@ -12,6 +12,6 @@ function convierte(){
     let dolar = inputValue * 200.75;
     console.log(parrafoDolar);
     parrafoDolar.style.display = '';
-    parrafoDolar.value('En dolares es: ' + dolar);
+    document.getElementById("dolar").innerHTML = "En dolares es: " + dolar;
 }
 
