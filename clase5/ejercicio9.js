@@ -9,7 +9,7 @@ function convierte(){
     
     let inputValue = document.getElementById("pesos").value;
     console.log(inputValue);
-    let dolar = inputValue * 200.75;
+    let dolar = (inputValue / 200.75).toFixed(2);
     console.log(parrafoDolar);
     parrafoDolar.style.display = '';
     document.getElementById("dolar").innerHTML = "En dolares es: " + dolar;
