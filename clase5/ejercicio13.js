@@ -4,22 +4,24 @@ const button = document.getElementById('enviar');
 var numero = 0;
 var rdm = 0;
 var intentos = 3;
-button.addEventListener("click", (e)=>{
-    e.preventDefault();
+
     var numero =  +document.getElementById('num-usu').value;
+   
+    rdm =random();
    // console.log('este es el numero ' + numero);
   do{
-    rdm =random();
-    logicaAdivina(rdm);
-    intentos--;
     
-  }while(( numero != rdm ) || (intentos > 1) );
+            button.addEventListener("click", (e)=>{
+            //   e.preventDefault();
+                var numero =  +document.getElementById('num-usu').value;
+                logicaAdivina(rdm);
+                e.preventDefault();
+            });
+            intentos--;
     
+    }while(( numero != rdm ) || (intentos > 1) )
     
-  
 
-
-});
 
 function random(){
 
