@@ -1,14 +1,14 @@
 const button = document.getElementById('enviar');
-const numero =  document.getElementById('num-usu').value;
+const numero =  +document.getElementById('num-usu').value;
 const adivinaste = document.getElementById('adivinaste');
 
 var rdm = 0;
 
 button.addEventListener("click", (e)=>{
-    e.preventDefault();
+    //e.preventDefault();
     
     logicaAdivina(random());
-});
+})
 
 function random(){
 
@@ -36,4 +36,3 @@ function logicaAdivina(rdm){
     }
 
 }
-

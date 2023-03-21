@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    
     <title>Ejercicio 13</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Numero Secreto</h1>
-    <p>Ingrese un  numero entre 0 y 5 para ser adivinado</p>
+    <p>Ingrese un numero entre 0 y 5 para ser adivinado</p>
     <form method="post">
       <fieldset>
-        
-        <label for="num-usu">Un numero entre 0 y 5:
+        <label for="num-usu"
+          >Un numero entre 0 y 5:
 
-          <input id="num-usu" name="num-usu" type="number" min="0" max="5" required/>
-          
-          
+          <input
+            id="num-usu"
+            name="num-usu"
+            type="number"
+            min="0"
+            max="5"
+            required
+          />
         </label>
-        
-        <p id="adivina" style = "display: none">Adivinaste  </p>
-
+        <input type="button" id="enviar" value="Enviar" />
+        <p id="adivina" style="display: none">Adivinaste</p>
       </fieldset>
-      <input type="submit" id="enviar" value="Enviar"/> 
-    </form>     
+     
+    </form>
     <script src="ejercicio13.js"></script>
-</body>
-
+  </body>
 </html>
