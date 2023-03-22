@@ -5,21 +5,24 @@ var numero = 0;
 var rdm = 0;
 var intentos = 3;
 
-    var numero =  +document.getElementById('num-usu').value;
-   
+    
+    
     rdm =random();
    // console.log('este es el numero ' + numero);
-  do{
-    
-            button.addEventListener("click", (e)=>{
-            //   e.preventDefault();
-                var numero =  +document.getElementById('num-usu').value;
-                logicaAdivina(rdm);
-                e.preventDefault();
-            });
-            intentos--;
-    
-    }while(( numero != rdm ) || (intentos > 1) )
+   button.addEventListener("click", (e)=>{
+        intentos--;
+        var numero =  +document.getElementById('num-usu').value;
+        console.log('este es el numero' + numero);
+        console.log('este es el intento' + intentos);
+       if ( intentos >= 0){
+        logicaAdivina(rdm, numero);
+       }
+        else{
+            document.getElementById("adivina").innerHTML = "Perdiste "
+        }
+        e.preventDefault();
+    });
+ 
     
 
 
@@ -31,23 +34,31 @@ function random(){
     
 }
 
-function logicaAdivina(rdm){
+function logicaAdivina(rdm, numero){
     rdm=+rdm;
     console.log(rdm);
     console.log(numero);
-    if ( rdm > numero) {
+    adivina.style.display = '';
+
+    if (( rdm > numero) && (intentos > 0)){
         
-        adivina.style.display = '';
-        document.getElementById("adivina").innerHTML = "El numero que ingresaste es menor, te quedan " + intentos;
+       
+        document.getElementById("adivina").innerHTML = "El numero que ingresaste es menor, te quedan " + intentos +" intentos";
+        
 
+    }else if(( rdm < numero) && (intentos > 0)){
+       
+        document.getElementById("adivina").innerHTML = "El numero que ingresaste es mayor, te quedan " + intentos +" intentos";
 
-    }else if( rdm < numero){
-        adivina.style.display = '';
-        document.getElementById("adivina").innerHTML = "El numero que ingresaste es mayor, te quedan " + intentos;
+    }else if(( rdm != numero) && (intentos == 0)) {
+      
+        document.getElementById("adivina").innerHTML = "Perdiste 😌👎" ;
+        document.getElementById("enviar").disabled = true;
 
-    }else {
-        adivina.style.display = '';
-        document.getElementById("adivina").innerHTML = "Adivinaste " + intentos;
+    }else{
+      
+        document.getElementById("adivina").innerHTML = "Ganaste 😁🎉🎉" ;
+        document.getElementById("enviar").disabled = true;
 
     }
 
