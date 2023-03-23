@@ -8,63 +8,32 @@
   </head>
   <body>
     <h1>Formulario para solicitar el envio de cajas de carton</h1>
-    <form name="Formulario" method="post">
-      <fieldset>
-        <label for="nombre-cliente"
-          >Nombre del cliente:
-          <input id="nombre-cliente" type="text" required /></label
-        ><br />
-        <label for="material-caja"
-          >Material de la caja:
-          <select id="material-caja" name="material-caja" required>
-            <option value="">(select one)</option>
-            <option value="Madera">Madera</option>
-            <option value="Carton">Carton</option>
-            <option value="Plastico">Plastico</option>
-            <option value="Metal">Metal</option>
-          </select>
-        </label>
-        <br />
-      </fieldset>
-      <br />
-      <fieldset>
-        <label for="dimeciones-caja">Selecione una dimesion para la caja:</label
-        ><br />
-        <label for="diminuta"
-          ><input
-            id="dimeciones-caja"
-            type="radio"
-            name="Diminuta"
-            class="inline"
-          />
-          Diminuta</label
-        ><br />
-        <label for="mediana"
-          ><input
-            id="dimeciones-caja"
-            type="radio"
-            name="Mediana"
-            class="inline"
-          />
-          Mediana</label
-        ><br />
-        <label for="grande"
-          ><input
-            id="dimeciones-caja"
-            type="radio"
-            name="Grande"
-            class="inline"
-          />
-          Grande</label
-        ><br />
-        <label for="comentarios" id="comentarios1">Comentarios:</label> <br />
-
-        <textarea id="comentarios" name="comentarios"></textarea>
-      </fieldset>
-      <br />
-      <input type="submit" id="enviar" value="Enviar" /> <br /><br />
-      <fieldset>
-        <p id="resumen" style="display: none"></p>
+    <form name="Formulario"  >
+        <fieldset>
+            <label for="nombre-cliente">Nombre del cliente: <input id="nombre-cliente" type="text" required></label><br>
+            <label for="material-caja">Material de la caja: 
+                <select id="material-caja" name="material-caja" required>
+                    <option value="">(select one)</option>
+                    <option value="Madera">Madera</option>
+                    <option value="Carton">Carton</option>
+                    <option value="Plastico">Plastico</option>
+                    <option value="Metal">Metal</option>
+                  </select>
+            </label>
+            <br>
+        </fieldset><br>
+        <fieldset>
+            <label for="dimeciones-caja">Selecione una dimesion para la caja:</label><br>
+            <label for="diminuta"><input id="dimeciones-caja" type="radio" name="Diminuta" class="inline" /> Diminuta</label><br>
+            <label for="mediana"><input id="dimeciones-caja" type="radio" name="Mediana" class="inline" /> Mediana</label><br>
+            <label for="grande"><input id="dimeciones-caja" type="radio" name="Grande" class="inline" /> Grande</label><br>
+            <label for="comentarios" id="comentarios1">Comentarios:</label><textarea id="comentarios" type="textarea" name="comentarios"></textarea>
+        </fieldset><br>
+          <input type="submit" id="enviar" value="Enviar" /> <br><br>
+        <fieldset>
+            <p id="resumen" style="display: none"></p>  
+        </fieldset>
+    
       </fieldset>
     </form>
     <script type="text/javascript" src="ejercicio12.js"></script>

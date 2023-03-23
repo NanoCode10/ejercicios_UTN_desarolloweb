@@ -1,37 +1,64 @@
 const button = document.getElementById('enviar');
-const numero =  +document.getElementById('num-usu').value;
-const adivinaste = document.getElementById('adivinaste');
 
+//const adivina = document.getElementById('adivina');
+var numero = 0;
 var rdm = 0;
+var intentos = 3;
 
-button.addEventListener("click", (e)=>{
-    //e.preventDefault();
     
-    logicaAdivina(random());
-})
+    
+    rdm =random();
+   // console.log('este es el numero ' + numero);
+   button.addEventListener("click", (e)=>{
+        intentos--;
+        var numero =  +document.getElementById('num-usu').value;
+        console.log('este es el numero' + numero);
+        console.log('este es el intento' + intentos);
+       if ( intentos >= 0){
+        logicaAdivina(rdm, numero);
+       }
+        else{
+            document.getElementById("adivina").innerHTML = "Perdiste "
+        }
+        e.preventDefault();
+    });
+ 
+    
+
 
 function random(){
 
     rdm = Math.floor(Math.random() * 6);
-    console.log(rdm, numero);
+   // console.log(rdm, numero);
     return(rdm);
     
 }
 
-function logicaAdivina(rdm){
-    
-    if ( rdm > numero) {
-        
-        console.log('El numero ingresado es menor al de la adivinaza 🤷‍♂️');
+function logicaAdivina(rdm, numero){
+    rdm=+rdm;
+    console.log(rdm);
+    console.log(numero);
+    adivina.style.display = '';
 
-
-    }else if( rdm < numero){
+    if (( rdm > numero) && (intentos > 0)){
         
-        console.log('El numero ingresado es mayor al de la adivinaza 🤷‍♂️');
-
-    }else {
+       
+        document.getElementById("adivina").innerHTML = "El numero que ingresaste es menor, te quedan " + intentos +" intentos";
         
-        console.log('Adinaste! 🙌👏');
+
+    }else if(( rdm < numero) && (intentos > 0)){
+       
+        document.getElementById("adivina").innerHTML = "El numero que ingresaste es mayor, te quedan " + intentos +" intentos";
+
+    }else if(( rdm != numero) && (intentos == 0)) {
+      
+        document.getElementById("adivina").innerHTML = "Perdiste 😌👎" ;
+        document.getElementById("enviar").disabled = true;
+
+    }else{
+      
+        document.getElementById("adivina").innerHTML = "Ganaste 😁🎉🎉" ;
+        document.getElementById("enviar").disabled = true;
 
     }
 
