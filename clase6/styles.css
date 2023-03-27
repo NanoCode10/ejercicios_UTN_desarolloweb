@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+   
+    color: rgb(240,240,240);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    font-family: Verdana, Tahoma, sans-serif;
+    background-image: url("bg-palm.jpg");
+}
+
+h1 {
+   
+    font-size: 40px;
+    margin-bottom: 30px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: rgb(240,240,240);
+}
+
+.menu{
+    width: 100%;
+    background-color: rgb(247, 241, 241);
+    margin: 7px;
+    border-radius: 17px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.menu:hover {
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    transform: scale(1.02);
+}
+
+
+.icon {
+    margin: 4px 8px;
+    width: 30px;
+    height: 50px;
+}
+p{
+    margin-right: 120px;
+}
+.espacio{
+    margin: 60px;
+}
+.footer{
+      
+     
+    display: flex;
+    flex-direction: row;
+        
+}    
