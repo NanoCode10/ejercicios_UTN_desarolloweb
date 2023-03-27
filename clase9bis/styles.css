@@ -1,9 +1,3 @@
-@import url("https://fonts.google.com/specimen/Nunito?query=nunito");
-
-* {
-  font-family: Nunito, sans-serif;
-}
-
 .wrapper {
   background: #22193F  ;
   background-image: url("img/ondas.svg");
@@ -32,6 +26,7 @@
   background-repeat: no-repeat;
   position: relative;
   border-radius: 10px 0 0 10px;
+  
 }
 img {
   width: 150px;
@@ -48,23 +43,26 @@ img {
     position: relative;
 }
 header{
-    
+    font-family: 'Nunito Black';
+    color:  #22193F;
+    font-size: 28px;
     padding:  0px 0px 0px 0px;
     margin-bottom: 40px;
-    font-weight: 900;
+    font-weight: bold;
    
 }
+
 .input-box {
     width: 330px;
     box-sizing: border-box;
     position: relative;
 }
 .input-field input {
-    font-size: 16px;
+  font-family: 'Nunito Regular';
+   font-size: 16px;
    padding: 0px 0px 0px 0px;
    margin-bottom: 1px;
-   
-   border-color: gray;
+   border-color: #C4C4C4 ;
    border-style:solid  ;
    border-radius:30px;
 
@@ -74,10 +72,20 @@ svg{
     position: absolute;
     margin-left: 10px;
     margin-top: 5px;
+    color: #6A2A83;
 }
-/*
-input:focus {
-    box-shadow: 0 0 5px #3786da;
-    border: 1px solid #30567e;
-  }
-  */
+a:link{
+  font-family: 'Nunito Bold';
+  color: #E21982;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.button {
+  color: #fff;
+  font-family: 'Nunito Bold';
+  background-color: #E21982;
+  border-color: #E21982;
+  border-radius: 30px;
+  font-size: 16px;
+ }
