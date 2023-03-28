@@ -1,53 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 9</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.google.com/specimen/Nunito?query=nunito"
+    />
     <link rel="stylesheet" href="styles.css" />
-</head>
-<body class="bg">
-    
- 
-    <div class="container border">
-        <div class="row vh-100 justify-content-center align-items-center ">
-            
-            <div class="col border clearfix" >
-                <div class="col  img-login justify-content-center align-items-center">
-                    <img src="logo-blanco.svg" width="40">
-                </div>
+    <title>Clase 9</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container main">
+        <div class="row col-md-6 col-sm-3">
+          <div class="col-md-6 col-sm-12 side-image">
+            <img src="img/logo-blanco.svg" alt="" />
+          </div>
+          <div class="col  right">
+            <div class="input-box  text-start ">
+              <header>Login</header>
+              <div class="input-field mb-2  d-grid gap-1">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                     <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                    </svg>
+                    <input type="text" class="input" id="email" name="email"placeholder="       email" required/>
+               
+                
+              </div>
+              <div class="input-field mb-2 d-grid gap-2">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                  <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+                </svg>
+                <input
+                  type="password"
+                  class="input"
+                  id="password"
+                  placeholder="       contraseña"
+                  name="password"
+                  required
+                />
+              </div>
+              <div class="input-link mb-4 text-end">
+                <a href="www.clarin.com.ar">¿olvidaste la contraseña?</a>
+              </div>
+              <div class="d-grid gap-2">
+                      <button class="btn btn-primary btn-sm" type="button">Ingresar</button>
+              </div>  
             </div>
-           
-            <div class="col border">
-                <h2 class="fw-bold text-start pt-5 mb-5">Login</h2>
-                <form >
-                    <div class="mb-4">
-                       
-                        <input type="email" class="form-control" placeholder="✉ email" name="email">
-
-
-
-                    </div>
-                    <div class="mb-4">
-                        <input type="password" class="form-control" placeholder="🔒 password" name="password">
-                    </div>
-                        
-                    <div class="mb-4 text-end">
-                        <a  href="www.clarin.com.ar">¿olvidaste la contraseña?</a>
-                    </div>
-                    <div class="d-grid gap-2">
-                            <button class="btn btn-primary" type="button">Ingresar</button>
-                    </div>
-                </form>
-            </div>
+          </div>
         </div>
+      </div>
+    </div>
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    
-    
-</body>
+  </body>
 </html>
