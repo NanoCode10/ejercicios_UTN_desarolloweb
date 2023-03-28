@@ -48,6 +48,7 @@ header{
     font-size: 28px;
     padding:  0px 0px 0px 0px;
     margin-bottom: 40px;
+    
     font-weight: bold;
    
 }
@@ -89,3 +90,29 @@ a:link{
   border-radius: 30px;
   font-size: 16px;
  }
+@media only screen and (max-width: 768px){
+  .side-image{
+    border-radius: 10px 10px 0 0;
+    height: 210px;
+    position: relative;
+  }
+  img{
+    width: 180px;
+    
+    position: absolute;
+
+    top: 70px;
+    left: 27%;
+  }
+  .row{
+    height: 500px;
+    max-width: 400px;
+    width: 100%;
+  }
+  header{
+    padding: 1px 1px 40px 1px;
+    margin: 2px 1px 1px 1px;
+   
+  }
+}
+  
