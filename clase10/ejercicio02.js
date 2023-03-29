@@ -31,13 +31,14 @@ E();
 F();
 //ACA ESTA EL A CN EL WHILE
 function A (){
-array.forEach((item) => {
+var i= 0;
+  while(  i = 0){
 
 
     template.querySelector("span").textContent = item;
     const clone = template.cloneNode(true);
     fragment.appendChild(clone);
-  });
+}
   listaA.appendChild(fragment);
 }
 
