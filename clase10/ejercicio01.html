@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Ejercicio 1 Clase 10</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Ingrese Numeros aleatorios para rellenar un array</h1>
+    <label
+      >Ingrese Numeros:
+      <input class="numero" id="numero" type="number" required />
+      <input type="submit" id="enviar" value="Guardar" /> <br /><br /><br /><br>
+      <p id="array-desordenado"> </p>
+    </label>
+    <label>Precione el boton para ordenar su array   </label><input type="submit" id="terminar" value="Terminar" /><br /><br /><br /><br/>
+    <h1 id="lista-array" style="display: none">Lista Array ordenado :</h1>
+    <ul id="lista"></ul>
+    <template id="template">
+      <br />
+      <li class="list"><b>Numero: </b><span>${item}</span></li>
+    </template>
+
+    <script src="ejercicio01.js"></script>
+</body>
+</html>

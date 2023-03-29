@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 body, html {
@@ -27,3 +28,123 @@ body, html {
     background-repeat: no-repeat;
     background-size:contain ;
   }
+=======
+.wrapper {
+  background: #22193F  ;
+  background-image: url("img/ondas.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0 0px 0 0px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.row {
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.side-image {
+  background-image: url("img/img-login.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 10px 0 0 10px;
+  
+}
+img {
+  width: 150px;
+  position: absolute;
+
+  top: 40%;
+  left: 25%;
+}
+.right{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+header{
+    font-family: 'Nunito Black';
+    color:  #22193F;
+    font-size: 28px;
+    padding:  0px 0px 0px 0px;
+    margin-bottom: 40px;
+    
+    font-weight: bold;
+   
+}
+
+.input-box {
+    width: 230px;
+    box-sizing: border-box;
+    position: relative;
+}
+.input-field input {
+  font-family: 'Nunito Regular';
+   font-size: 16px;
+   padding: 0px 0px 0px 0px;
+   margin-bottom: 1px;
+   border-color: #C4C4C4 ;
+   border-style:solid  ;
+   border-radius:30px;
+
+
+}   
+svg{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 5px;
+    color: #6A2A83;
+}
+a:link{
+  font-family: 'Nunito Bold';
+  color: #E21982;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  color: #fff;
+  font-family: 'Nunito Bold';
+  background-color: #E21982;
+  border-color: #E21982;
+  border-radius: 30px;
+  font-size: 16px;
+ }
+@media only screen and (max-width: 768px){
+  .side-image{
+    border-radius: 10px 10px 0 0;
+    height: 210px;
+    position: relative;
+  }
+  img{
+    width: 180px;
+    
+    position: absolute;
+
+    top: 70px;
+    left: 27%;
+  }
+  .row{
+    height: 500px;
+    max-width: 400px;
+    width: 100%;
+  }
+  header{
+    padding: 1px 1px 40px 1px;
+    margin: 2px 1px 1px 1px;
+   
+  }
+}
+  
+>>>>>>> 74e4ddddba00ee8b2de799f9594fc3ee6d934428

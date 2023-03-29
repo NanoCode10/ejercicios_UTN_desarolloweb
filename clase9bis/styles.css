@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 @import url("https://fonts.google.com/specimen/Nunito?query=nunito");
 
 * {
   font-family: Nunito, sans-serif;
 }
 
+=======
+>>>>>>> 74e4ddddba00ee8b2de799f9594fc3ee6d934428
 .wrapper {
   background: #22193F  ;
   background-image: url("img/ondas.svg");
@@ -32,6 +35,10 @@
   background-repeat: no-repeat;
   position: relative;
   border-radius: 10px 0 0 10px;
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 74e4ddddba00ee8b2de799f9594fc3ee6d934428
 }
 img {
   width: 150px;
@@ -48,6 +55,7 @@ img {
     position: relative;
 }
 header{
+<<<<<<< HEAD
     
     padding:  0px 0px 0px 0px;
     margin-bottom: 40px;
@@ -56,15 +64,37 @@ header{
 }
 .input-box {
     width: 330px;
+=======
+    font-family: 'Nunito Black';
+    color:  #22193F;
+    font-size: 28px;
+    padding:  0px 0px 0px 0px;
+    margin-bottom: 40px;
+    
+    font-weight: bold;
+   
+}
+
+.input-box {
+    width: 230px;
+>>>>>>> 74e4ddddba00ee8b2de799f9594fc3ee6d934428
     box-sizing: border-box;
     position: relative;
 }
 .input-field input {
+<<<<<<< HEAD
     font-size: 16px;
    padding: 0px 0px 0px 0px;
    margin-bottom: 1px;
    
    border-color: gray;
+=======
+  font-family: 'Nunito Regular';
+   font-size: 16px;
+   padding: 0px 0px 0px 0px;
+   margin-bottom: 1px;
+   border-color: #C4C4C4 ;
+>>>>>>> 74e4ddddba00ee8b2de799f9594fc3ee6d934428
    border-style:solid  ;
    border-radius:30px;
 
@@ -74,6 +104,7 @@ svg{
     position: absolute;
     margin-left: 10px;
     margin-top: 5px;
+<<<<<<< HEAD
 }
 /*
 input:focus {
@@ -81,3 +112,48 @@ input:focus {
     border: 1px solid #30567e;
   }
   */
+=======
+    color: #6A2A83;
+}
+a:link{
+  font-family: 'Nunito Bold';
+  color: #E21982;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  color: #fff;
+  font-family: 'Nunito Bold';
+  background-color: #E21982;
+  border-color: #E21982;
+  border-radius: 30px;
+  font-size: 16px;
+ }
+@media only screen and (max-width: 768px){
+  .side-image{
+    border-radius: 10px 10px 0 0;
+    height: 210px;
+    position: relative;
+  }
+  img{
+    width: 180px;
+    
+    position: absolute;
+
+    top: 70px;
+    left: 27%;
+  }
+  .row{
+    height: 500px;
+    max-width: 400px;
+    width: 100%;
+  }
+  header{
+    padding: 1px 1px 40px 1px;
+    margin: 2px 1px 1px 1px;
+   
+  }
+}
+  
+>>>>>>> 74e4ddddba00ee8b2de799f9594fc3ee6d934428
