@@ -12,47 +12,37 @@ const titulo = document.getElementById("titulo").textContent;
 const fragment = document.createDocumentFragment();
 
 var array = [1,2,3,4,5,6];
-
-console.log(template);
-console.log(listaA);
-console.log(listaB);
-console.log(listaC);
-console.log(listaD);
-console.log(listaE);
-console.log(listaF);
-console.log(titulo);
-
-console.log(array);
 A();
 B();
 C();
 D();
 E();
 F();
+
 //ACA ESTA EL A CN EL WHILE
 function A (){
-var i= 0;
-  while(  i = 0){
-
-
-    template.querySelector("span").textContent = item;
+  var i= 0;
+  while(  i < array.length ){
+        
+    template.querySelector("span").textContent = array[i];
     const clone = template.cloneNode(true);
     fragment.appendChild(clone);
-}
+    i++;  
+
+  }
+
   listaA.appendChild(fragment);
 }
 
 // ACA ESTA EL b CON EL FOR  
 function B (){
-array.forEach((item) => {
 
-
-
-
-    template.querySelector("span").textContent = item;
+  for(i=0; i < array.length; i++)
+  {
+    template.querySelector("span").textContent = array[i];
     const clone = template.cloneNode(true);
     fragment.appendChild(clone);
-  });
+  }  
 
   listaB.appendChild(fragment);
 }
@@ -71,8 +61,6 @@ function C(){
 
 }
 
-
-
 ///  ----->   D
 function D(){
 
@@ -84,11 +72,7 @@ function D(){
 
 }
 
-
-
-
 ///  ----->   E
-
 function E(){
 
     var  newArray = array.map(function(x) {
@@ -102,13 +86,10 @@ function E(){
 
 }    
 
-
 ///  ----->   F
-
 function F(){
     const reducer = (accumulator, currentValue) => accumulator + currentValue;
     var promedio = array.reduce(reducer) / (array.length + 1);
-    console.log(promedio);
     $("#listaF").append(promedio);
 }
 
