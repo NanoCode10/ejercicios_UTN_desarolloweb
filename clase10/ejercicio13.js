@@ -1,5 +1,5 @@
 const rows = document.querySelectorAll('tr.row');
-console.log(rows);
+
 
 rows.forEach(row => {
   row.addEventListener('click', () => {

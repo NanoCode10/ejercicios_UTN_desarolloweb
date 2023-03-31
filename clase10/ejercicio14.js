@@ -4,18 +4,22 @@ const boton3 = document.getElementById("boton-3");
 
 
 boton1.addEventListener('click', () => {
-    const p = document.querySelectorAll('p.p-1');
-    p.classList.add('select');
-    console.log(p);
+    const p1 = $('p.p-1');
+    $( "p.p-1" ).last().addClass( "select" );
+   
 });
 
 boton2.addEventListener('click', () => {
-
+    const p2 = $('p.p-2');
+    $( "p.p-2" ).last().addClass( "select" );
+   
 
 });
 
 boton3.addEventListener('click', () => {
-
+    const p3 = $('p.p-3');
+    $( "p.p-3" ).last().addClass( "select" );
+   
 
 });
 
