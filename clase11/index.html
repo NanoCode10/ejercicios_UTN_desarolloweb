@@ -8,35 +8,38 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="col-12 wrapper">
-    
+    <div class="wrapper">    
         <nav class="navbar navbar-light">
         <a class="navbar-brand" href="#">
-            <img src="img/logo.svg" width="80" height="50" class="d-inline-block align-top" alt="">
-        
-            
+            <img src="img/logo.svg" width="80" height="50" class="d-inline-block align-top" alt="">            
         </a>
         
-        <ul class="list-group list-group-horizontal  navbar-nav justify-content-md-end mr-auto">
-            <li class="nav-item active p-2"><a class="nav-link" href="#">  Quines somos </a></li>
-            <li class="nav-item active p-2"><a class="nav-link" href="#"> Como funciona </a></li>
-            <li class="nav-item active p-2"><a class="nav-link" href="#"> FAQS </a></li>        
-            <div class="d-grid d-md-flex justify-content-md-end p-2">
-                <button class="btn btn-primary rounded-pill boton" style="width:120px"  type="button">Login</button>
+            <ul class="list-group list-group-horizontal navbar-nav justify-content-md-end">
+            <li class="nav-item active p-2"><a class="nav-link" href="#"><strong>  Quines somos </strong></a></li>
+            <li class="nav-item active p-2"><a class="nav-link" href="#"><strong> Como funciona </strong></a></li>
+            <li class="nav-item active p-2"><a class="nav-link" href="#"><strong> FAQS </strong></a></li>        
+                <div class="d-grid d-md-flex justify-content-md-end p-2">
+                    <button class="btn btn-primary rounded-pill boton" style="width:120px"  type="button">Login</button>
                
-            </div>
-        </ul>
-        
-        </nav>
-      
-
-     
+                </div>
+            </ul>        
+        </nav>     
     </div>    
+
     <div class="comenzar align-content-center">
         <div >
-          <h1>Cada día, mejor</h1>
+          <h1 class="titulo-principal">Cada día, mejor</h1>
           <p>La red más eficiente de profesionales para tu desarrollo y bienestar emocional.</p>  
           <button class="btn btn-primary rounded-pill boton" style="width:120px"  type="button">COMENZAR</button>  
          
@@ -45,8 +48,8 @@
     <div class="conocenos align-content-center">
         <div >
           
-          <i class="i-conocenos">CONOCENOS</i>  
-          <h1 class="titulo-quienes">Quienes somos</h1><br/>
+          <i class="i-conocenos pre-titulo">CONOCENOS</i>  
+          <h1 class="titulo-quienes titulo-principal">Quienes somos</h1><br/>
           
           <p class="titulo-quienes">En <strong>Anima-T</strong> colaboramos con la construcción de un mundo mejor a partir de empoderar y habilitar a las personas para que alcancen su mejor versión.
             A través de esta plataforma, acercamos clientes y profesionales, brindando un espacio de conexión para facilitar un proceso hacia el bienestar emocional, el logro de objetivos y el desarrollo personal, en cualquier momento y en cualquier lugar.
@@ -54,12 +57,12 @@
          
         </div>
     </div>
-    <div class="ayuda align-content-center">
+    <div class="ayuda">
         <div >
           
-          <i class="i-conocenos">CÓMO FUNCIONA</a>  
-          <h1 class="h1-color">¿Buscas ayuda?</h1>
-          <ul class="list-group list-group-horizontal navbar-nav">
+          <i class="i-conocenos pre-titulo">CÓMO FUNCIONA</i>  
+          <h1 class="h1-color titulo-principal">¿Buscas ayuda?</h1>
+          <ul class="list-group list-group-horizontal navbar-nav i-conocenos">
            
             <li class="nav-item active p-2"><i class="bi bi-list-check icon"></i><a class="nav-link" href="#"><i><strong>01.</strong></i><br/>Responde unas preguntas para conocer tu perfil y lo que buscás.</a></li>
             
@@ -71,20 +74,20 @@
          
         </div>
     </div>
-    <div class="sumarte align-content-center">
-        <div class="col-6">
+    <div class="sumarte">
+        <div class="p-4">
           
           <h3>Si brindas ayuda y te interesa sumarte</h3>  
          
          
         </div>
-        <button class="btn btn-primary rounded-pill btn-sm boton click-aqui" style="width:120px"  type="button">Hace click aqui</button>
+        <button class="btn btn-primary rounded-pill btn-sm boton click-aqui p-2" style="width:120px"  type="button">Hace click aqui</button>
     </div>
     <div class="preguntas align-content-center p-5">
         <div >
           
-          <a>CONOCENOS</a>  
-          <h1>Preguntas frecuentes</h1>
+          <i class="pre-titulo">CONOCENOS</i>  
+          <h1 class="frecuentes titulo-pregunta">Preguntas frecuentes</h1>
             <div class="row">
                 <div class="col-8 p-5">
                     <div class="dropdown p-1">
@@ -149,11 +152,11 @@
         </div>
     </div>
 
-    <!-- Footer -->
+    
 <footer class="align-items-center">
-    <!-- Section: Social media -->
+  
     <section class="d-flex bd-highlight p-4 border-bottom">
-      <!-- Left -->
+    
        
             <div class="bd-highlight me-5">
                 <span>Terminos y condiciones</span>
@@ -165,13 +168,13 @@
          
       <div class="bd-highlight ms-auto text-end ">
 
-        <a href="" class="text-reset icon-r">
+        <a href="" class="icon-r">
             <i class="bi bi-facebook"></i>
         </a>     
-        <a href="" class="text-reset icon-r">
+        <a href="" class="icon-r">
             <i class="bi bi-instagram"></i>
         </a>
-        <a href="" class="text-reset icon-r">
+        <a href="" class="icon-r">
             <i class="bi bi-linkedin"></i>
         </a>
        
@@ -181,7 +184,7 @@
    
      
     <!-- Copyright -->
-    <div class="text-center p-4 derechos" >
+    <div class="text-center p-4 derechos copy" >
       © 2023 Copyright:
       <a class="text-reset fw-bold" href="">Todos los derechos reservados - NanoCode10</a>
     </div>
